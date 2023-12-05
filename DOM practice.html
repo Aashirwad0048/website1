@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+</head>
+<body>
+    
+        <script>
+           
+        const para=document.createElement("p");
+        para.textContent="Hello";
+        document.body.appendChild(para);
+        const text = document.createTextNode("Lol! No Question")
+        const para2 = document.createElement("p");
+        para2.textContent="Answer the given question briefly"
+        const para3 = document.createElement("p");
+        para3.textContent="It's coming on your screen"
+        const text2 = document.createTextNode(" I think you should go outside")
+
+        const div1 = document.createElement("div");
+        document.body.appendChild(div1);
+        div1.appendChild(para);
+        document.body.appendChild(text);
+        div1.appendChild(para2);
+        div1.appendChild(para3);
+        document.body.appendChild(text2);
+
+
+
+        
+
+    </script>
+    
+</body>
+</html>

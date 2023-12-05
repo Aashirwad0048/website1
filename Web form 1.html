@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+       <title>Web form</title>
+       <style>
+        body{
+            font-family: 'Times New Roman', Times, serif;
+            background-image: url(solar.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            height: 100vh;
+
+        }
+        div{
+            background-color: rgba(68, 6, 71, 0.927);
+            border-radius: 15px;
+            padding: 40px;
+            width: auto;
+        }
+        label{
+            display:block;
+            margin-bottom: 10px;
+            margin-top: 10px;
+        }
+        input[type="text"], input[type="Password"], input[type="Email"],
+        select, textarea{  
+
+        }
+        input[type="submit"], input[type="reset"]{
+            background-color:black;
+            color:aliceblue;
+            padding: 10px;
+            border-radius: 10px;
+        
+        }
+        input:focus, select:focus, textarea:focus{
+            background-color:bisque;
+        
+        }
+        input[type="submit"]:hover, input[type="reset"]:hover{
+            background-color: yellow;
+            transform:scale(1.25);
+            cursor:pointer;
+        }
+       </style>
+    </head>
+    <body>
+        <div>
+        <form action="">
+            <h2>don't have a account?Want to join us?</h2>
+            <label for="name">Name:</label>
+            <input type="text" placeholder="First name">
+            <input typr="text" placeholder="Last name"><br>
+            <label for="email" placeholder="Email">Email:</label>
+            <input type="text"><br>
+            <label for="password">Password</label>
+            <input type="text"><br>
+            <select name="City" id="City"><option value="Cities">Select City</option>
+                <option value="Delhi">Delhi</option>
+                <option value="Mumbai">Mumbai</option>
+                <option value="Pune">Pune</option>
+            </select><br>
+            <label for="Address">Address:</label>
+            <textarea name="Address" id="Address" cols="30" rows="10"></textarea><br>
+            <label for="Gender">Gender:</label>
+            <input type="radio">Male
+            <input type="radio">Female<br>
+            <input type="submit" value="Submit form">
+            <input type="reset" value="Clear Form">
+
+            
+            
+        </form>
+        </div>
+    </body>

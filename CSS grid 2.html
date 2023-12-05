@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS grid 2</title>
+    <style>
+        .grid-container{
+            display: grid;
+            background-color: rgb(255, 81, 0);
+            padding: 10px;
+            grid-template-areas: " a" "b" "c" "d";
+            grid-template-columns: auto auto auto;
+
+        }
+        .grid-item{
+            background-color: aqua;
+            padding: 20px;
+            border: 1px solid orange;
+            font-size: 30px;
+            text-align: center;
+        }
+        #item1{
+            grid-area: a;
+        }
+        #item2{
+            grid-area: b;
+        }
+        #item3{
+            grid-area: c;
+        }
+        #item4{
+            grid-area: d;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="grid-container">
+    <div class="grid-item" id="item1">1</div>
+    <div class="grid-item" id="item2">2</div>
+    <div class="grid-item" id="item3">3</div>
+    <div class="grid-item" id="item4">4</div>
+    </div>
+</body>
+</html>
